@@ -22,4 +22,7 @@ app.controller("navbar", function($scope) {
 });
 
 app.controller("body", function($scope) {
+  $(blogData).find("navbar posts post").each(function (a, b) {
+    $scope.navitems.push({title: $(this).find("title").text(), body: $(this).find("body").text(), author: $(this).find("author").text(), tags: $(this).find("tags").text().split(',')});
+  });
 });
