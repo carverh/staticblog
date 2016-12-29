@@ -22,9 +22,7 @@
       <body>
         Test Document
       </body>
-      <tags>
-        <tag>test</tag>
-      </tags>
+      <tags>test,hello world</tags>
     </post>
   </posts>
 </blog>
