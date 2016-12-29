@@ -13,3 +13,11 @@
 .post-tag a {
   color: white;
 }
+
+.post-title {
+  margin-bottom: 2px;
+}
+
+.post-details {
+  margin-bottom: 4px;
+}
