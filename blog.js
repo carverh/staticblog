@@ -5,7 +5,7 @@ $.get("blog.xml", function (data) {
 
 var app = angular.module("app", []);
 app.controller("head", function($scope) {
-  $scope.title = $(blogData).text();
+  $scope.title = $(blogData).find("head title").text();
 });
 app.controller("navbar", function($scope) {
 });
