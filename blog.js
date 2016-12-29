@@ -14,6 +14,7 @@ app.controller("head", function($scope) {
 });
 
 app.controller("navbar", function($scope) {
+  $scope.title = $(blogData).find("navbar title").text();
 });
 
 app.controller("body", function($scope) {
