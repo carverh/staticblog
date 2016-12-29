@@ -7,7 +7,7 @@ x = $(blogData);
 
 var app = angular.module("app", []);
 app.controller("head", function($scope) {
-  $scope.title = x.find("head title")
+  $scope.title = x.find("head title").text()
 });
 app.controller("navbar", function($scope) {
 });
