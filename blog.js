@@ -22,8 +22,7 @@ app.controller("navbar", function($scope) {
 });
 
 app.controller("body", function($scope) {
-  var showdown  = require('showdown'),
-    converter = new showdown.Converter();
+  var converter = new showdown.Converter();
   $scope.posts = [];
   $(blogData).find("posts post").each(function (a, b) {
     $scope.posts.push({id: $(this).find("id").text(), title: $(this).find("title").text(), body: converter.makeHtml($(this).find("body").text()), author: $(this).find("author").text(), tags: $(this).find("tags").text().split(',')});
