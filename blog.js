@@ -17,7 +17,7 @@ app.controller("navbar", function($scope) {
   $scope.title = $(blogData).find("navbar title").text();
   $scope.items = []
   $(blogData).find("navbar items").each(function (a, b) {
-    $scope.items.push({name: b.find("name").text(), url: b.find("url").text()});
+    $scope.items.push({name: this.find("name").text(), url: this.find("url").text()});
   });
 });
 
