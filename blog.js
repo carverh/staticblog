@@ -1,3 +1,8 @@
+var blogData;
+$.get("blog.xml", function (data) {
+  blogData = data.responseXML;
+});
+
 var app = angular.module("app", []);
 app.controller("head", function($scope) {
 });
