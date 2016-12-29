@@ -1,0 +1,8 @@
+.post-tag-label {
+  font-weight: bold;
+}
+
+.post-tag {
+  border: 1px solid black;
+  border-radius: 8px;
+}
