@@ -15,6 +15,10 @@ app.controller("head", function($scope) {
 
 app.controller("navbar", function($scope) {
   $scope.title = $(blogData).find("navbar title").text();
+  $scope.items = []
+  $(blogData).find("navbar items").each(function (a, b) {
+    $scope.items.push({name: a.find("name").text(), url: a.find("url").text()});
+  });
 });
 
 app.controller("body", function($scope) {
