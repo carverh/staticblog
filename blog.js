@@ -23,6 +23,6 @@ app.controller("navbar", function($scope) {
 
 app.controller("body", function($scope) {
   $(blogData).find("body posts post").each(function (a, b) {
-    $scope.navitems.push({id: $(this).find("id").text(), title: $(this).find("title").text(), body: $(this).find("body").text(), author: $(this).find("author").text(), tags: $(this).find("tags").text().split(',')});
+    $scope.posts.push({id: $(this).find("id").text(), title: $(this).find("title").text(), body: $(this).find("body").text(), author: $(this).find("author").text(), tags: $(this).find("tags").text().split(',')});
   });
 });
