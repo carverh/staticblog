@@ -44,12 +44,16 @@
     <div class="main container" ng-controller="body">
 
       <article ng-repeat="post in posts" id="post-{{post.id}}">
-        <div class="post-title">{{post.title}}</div>
-        <div class="post-details"></div>
+        <h2 class="post-title">{{post.title}}</h2>
+        <div class="post-details">
+          <span class="post-author">
+            By <span class="post-author-value"><a href="./;search_query=author:{{post.author}}">{{post.author}}</a></span>
+          </span>
+        </div>
         <div class="post-body">{{post.body}}</div>
         <div class="post-tags">
-          <span class="post-tag" ng-repeat="tag in posts.tags">
-            <a href="./;search_query=#{{tag}}">{{tag}}</a>
+          <span class="post-tag" ng-repeat="tag in post.tags">
+            <a href="./;search_query=tag:{{tag}}">{{tag}}</a>
           </span>
        </div>
       </article>
