@@ -41,12 +41,18 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="main container" ng-controller="body">
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+      <article ng-repeat="post in posts" id="post-{{post.id}}">
+        <div class="post-title">{{post.title}}</div>
+        <div class="post-details"></div>
+        <div class="post-body">{{post.body}}</div>
+        <div class="post-tags">
+          <span class="post-tag" ng-repeat="tag in posts.tags">
+            <a href="./;search_query=#{{tag}}">{{tag}}</a>
+          </span>
+       </div>
+      </article>
 
     </div><!-- /.container -->
 
