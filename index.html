@@ -51,7 +51,7 @@
 
     <div class="main container" ng-controller="body">
 
-      <article ng-repeat="post in posts" id="post-{{post.id}}">
+      <article ng-repeat="post in posts" id="{{post.id}}">
         <h2 class="post-title" ng-bind="post.title">Post Title</h2>
         <div class="post-details">
           <span class="post-author">
