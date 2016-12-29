@@ -1,0 +1,13 @@
+<blog>
+  <post>
+    <id>helloworld</id>
+    <title>Hello World</title>
+    <author>Carver</author>
+    <body>
+      Test Document
+    </body>
+    <tags>
+      <tag>test</tag>
+    </tags>
+  </post>
+</blog>
