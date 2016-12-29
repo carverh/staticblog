@@ -57,7 +57,7 @@
             By <span class="post-author-value"><a href="./?search_query=author:{{post.author}}">{{post.author}}</a></span>
           </span>
         </div>
-        <div class="post-body">{{post.body}}</div>
+        <div class="post-body" ng-bind-html="post.body"></div>
         <div class="post-tags">
           <span class="post-tag-label">Tags: </span>
           <span class="post-tag" ng-repeat="tag in post.tags">
