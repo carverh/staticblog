@@ -3,7 +3,9 @@
 }
 
 .post-tag {
-  border: 1px solid black;
+  border: 1px solid #337ab7;
   border-radius: 8px;
-  padding: 4px;
+  padding: 2px;
+  background-color: #337ab7;
+  color: white;
 }
