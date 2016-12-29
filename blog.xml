@@ -1,13 +1,30 @@
 <blog>
-  <post>
-    <id>helloworld</id>
-    <title>Hello World</title>
+  <head>
+    <title>Carver's Blog</title>
     <author>Carver</author>
-    <body>
-      Test Document
-    </body>
-    <tags>
-      <tag>test</tag>
-    </tags>
-  </post>
+    <description>Carver's Static Blog</description>
+    <licence>CC BY-NC-SA 3.0</licence>
+  </head>
+  <navbar>
+    <title>Carver's Blog</title>
+    <items>
+      <item>
+        <name>Home</name>
+        <url>./</url>
+      </item>
+    </items>
+  </navbar>
+  <posts>
+    <post>
+      <id>helloworld</id>
+      <title>Hello World</title>
+      <author>Carver</author>
+      <body>
+        Test Document
+      </body>
+      <tags>
+        <tag>test</tag>
+      </tags>
+    </post>
+  </posts>
 </blog>
