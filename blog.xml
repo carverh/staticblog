@@ -20,10 +20,11 @@
       <title>Hello World</title>
       <author>Carver</author>
       <body>
-        Test Document
-        * Item 1
-        * Item 2
-        * Item 3
+### Test Document
+
+* Item 1
+* Item 2
+* Item 3
       </body>
       <tags>test,hello world</tags>
     </post>
