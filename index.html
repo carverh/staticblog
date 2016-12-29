@@ -52,6 +52,7 @@
         </div>
         <div class="post-body">{{post.body}}</div>
         <div class="post-tags">
+          <span class="post-tag-label">Tags: </span>
           <span class="post-tag" ng-repeat="tag in post.tags">
             <a href="./;search_query=tag:{{tag}}">{{tag}}</a>
           </span>
