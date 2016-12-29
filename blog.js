@@ -1,6 +1,6 @@
 var blogData;
 $.get("blog.xml", function (data) {
-  blogData = data.responseXML;
+  blogData = data;
 });
 
 var app = angular.module("app", []);
