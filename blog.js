@@ -4,7 +4,7 @@ $.get("blog.xml", function (data) {
   blogData = data;
 });
 
-var app = angular.module("app", []);
+var app = angular.module("app", ["ngSanitize"]);
 
 app.controller("head", function($scope) {
   $scope.title = $(blogData).find("head title").text();
